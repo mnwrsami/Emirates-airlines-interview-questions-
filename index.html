@@ -92,6 +92,12 @@
       flex-wrap: wrap;
     }
 
+    .action-note {
+      margin: -8px 0 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
     .button,
     .button-secondary {
       display: inline-flex;
@@ -195,9 +201,10 @@
           Note: This is not an official Emirates Airlines resource. Content is produced by applicants based on their interview experiences.
         </p>
         <div class="actions">
-          <a class="button" href="https://buy.stripe.com/4gMfZacO50fYbNA1Hs93y04" target="_blank" rel="noopener noreferrer">Make a Payment</a>
-          <a class="button-secondary" href="https://github.com/mnwrsami/Emirates-airlines-interview-questions-" target="_blank" rel="noopener noreferrer">View Repository</a>
+          <a class="button" href="https://buy.stripe.com/4gMfZacO50fYbNA1Hs93y04" target="_blank" rel="noopener noreferrer" aria-label="Make a Payment (opens in new tab)">Make a Payment ↗</a>
+          <a class="button-secondary" href="https://github.com/mnwrsami/Emirates-airlines-interview-questions-" target="_blank" rel="noopener noreferrer" aria-label="View Repository (opens in new tab)">View Repository ↗</a>
         </div>
+        <p class="action-note">Payment opens Stripe in a new tab.</p>
       </section>
 
       <aside class="hero-card">
