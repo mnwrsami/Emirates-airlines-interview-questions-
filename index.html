@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Emirates Airline Customer Service online interview questions — display-only preparation page.">
+  <meta name="theme-color" content="#7a1420">
+  <title>Emirates Airline Customer Service Online Interview Questions</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --red: #c8102e;          /* Emirates red */
+      --red-deep: #7a1420;     /* darker red for headers/overlay */
+      --beige: #f4ecdd;        /* page background */
+      --cream: #fbf6ea;        /* panels */
+      --cream-locked: #efe6d2; /* locked panels */
+      --ink: #2a2320;
+      --ink-soft: #6d6154;
+      --line: rgba(122, 20, 32, 0.18);
+      --shadow: 0 14px 40px -22px rgba(42, 35, 32, 0.5);
+    }
+
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+
+    body {
+      margin: 0;
+      background: var(--beige);
+      color: var(--ink);
+      font-family: "Source Sans 3", "Segoe UI", Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ---------- Header banner ---------- */
+    .banner {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      background: var(--red-deep);
+    }
+    .banner img {
+      display: block;
+      width: 100%;
+      height: clamp(220px, 42vw, 460px);
+      object-fit: cover;
+      object-position: center 30%;
+    }
+    .banner .overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(42,20,20,0.25) 0%, rgba(42,20,20,0.68) 100%);
+      display: flex;
+      align-items: flex-end;
+    }
+    .banner .overlay-inner {
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 22px 30px;
+    }
+    .banner h1 {
+      font-family: "Playfair Display", Georgia, serif;
+      color: #fff;
+      font-weight: 700;
+      font-size: clamp(24px, 5vw, 46px);
+      line-height: 1.12;
+      margin: 0;
+      text-shadow: 0 2px 14px rgba(0,0,0,0.55);
+      max-width: 20ch;
+    }
+    .banner .kicker {
+      display: inline-block;
+      background: var(--red);
+      color: #fff;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      padding: 5px 12px;
+      border-radius: 4px;
+      margin-bottom: 14px;
+    }
+
+    /* ---------- Layout ---------- */
+    main { max-width: 900px; margin: 0 auto; padding: 34px 22px 70px; }
+
+    .intro {
+      color: var(--ink-soft);
+      font-size: 16px;
+      margin: 0 0 30px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    /* ---------- Section labels ---------- */
+    .band {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 8px 0 18px;
+    }
+    .band .tag {
+      background: var(--red);
+      color: #fff;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 5px 12px;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+    .band .rule { flex: 1; height: 1px; background: var(--line); }
+
+    /* ---------- Question cards ---------- */
+    .q {
+      background: var(--cream);
+      border: 1px solid var(--line);
+      border-left: 4px solid var(--red);
+      border-radius: 12px;
+      padding: 20px 22px;
+      margin-bottom: 16px;
+      box-shadow: var(--shadow);
+    }
+    .q .label {
+      display: block;
+      font-family: "Playfair Display", Georgia, serif;
+      color: var(--red-deep);
+      font-weight: 700;
+      font-size: 15px;
+      margin-bottom: 8px;
+      letter-spacing: 0.02em;
+    }
+    .q p { margin: 0; font-size: 17px; color: var(--ink); }
+    .note {
+      display: block;
+      margin-top: 10px;
+      font-size: 13px;
+      font-style: italic;
+      color: var(--ink-soft);
+    }
+
+    /* ---------- Paywall ---------- */
+    .paywall {
+      background: var(--cream);
+      border: 2px dashed var(--red);
+      border-radius: 14px;
+      padding: 30px 24px;
+      text-align: center;
+      margin: 26px 0;
+    }
+    .paywall h2 {
+      font-family: "Playfair Display", Georgia, serif;
+      color: var(--red-deep);
+      font-size: clamp(21px, 3.6vw, 28px);
+      margin: 0 0 8px;
+    }
+    .paywall p { color: var(--ink-soft); margin: 0 auto 22px; max-width: 46ch; }
+
+    .btn {
+      display: inline-block;
+      border: none;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 16px;
+      font-weight: 600;
+      padding: 15px 30px;
+      border-radius: 999px;
+      text-decoration: none;
+      transition: transform .15s ease, background-color .15s ease, box-shadow .15s ease;
+    }
+    .btn-pay {
+      background: var(--red);
+      color: #fff;
+      box-shadow: 0 12px 28px -12px rgba(200, 16, 46, 0.8);
+    }
+    .btn-pay:hover, .btn-pay:focus { background: #b00d27; transform: translateY(-2px); }
+
+    .paid-row { margin-top: 18px; }
+    .btn-paid {
+      background: transparent;
+      color: var(--red-deep);
+      border: 1.5px solid var(--red);
+    }
+    .btn-paid:hover, .btn-paid:focus { background: rgba(200,16,46,0.08); }
+
+    .divider-or {
+      display: block;
+      margin: 16px 0 4px;
+      font-size: 13px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+    }
+
+    /* ---------- Locked content ---------- */
+    #locked { display: none; }
+    #locked.unlocked { display: block; animation: reveal .45s ease both; }
+    @keyframes reveal {
+      from { opacity: 0; transform: translateY(10px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .unlocked-banner {
+      background: var(--red-deep);
+      color: #fff;
+      border-radius: 10px;
+      padding: 12px 18px;
+      font-weight: 600;
+      font-size: 15px;
+      margin-bottom: 22px;
+      text-align: center;
+    }
+
+    /* ---------- Language assessment ---------- */
+    .lang-head {
+      font-family: "Playfair Display", Georgia, serif;
+      color: var(--red-deep);
+      font-size: clamp(22px, 4vw, 30px);
+      margin: 34px 0 4px;
+    }
+    .lang-sub { color: var(--ink-soft); margin: 0 0 18px; font-size: 15px; }
+    .q-lang { border-left-color: var(--red-deep); }
+
+    footer {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 26px 22px 50px;
+      border-top: 1px solid var(--line);
+      color: var(--ink-soft);
+      font-size: 13px;
+      text-align: center;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, #locked.unlocked { animation: none !important; transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <header class="banner">
+    <img src="header-photo.jpg" alt="Emirates Airline cabin crew and customer service staff in uniform">
+    <div class="overlay">
+      <div class="overlay-inner">
+        <span class="kicker">Online Interview</span>
+        <h1>Emirates Airline Customer Service Online Interview Questions</h1>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <p class="intro">
+      Below are the interview questions in the order they should be answered. This page is for
+      viewing the questions only — you will record and submit your answers separately. Questions&nbsp;1
+      and&nbsp;2 are shown for free; the remaining questions unlock after payment.
+    </p>
+
+    <!-- Free questions -->
+    <div class="band"><span class="tag">Free preview</span><span class="rule"></span></div>
+
+    <article class="q">
+      <span class="label">Question 1 of 6</span>
+      <p>Please recall a time you were faced with multiple changes or different requests throughout a shift that required you to adjust what you were doing. Share with us the situation, the action that you took, and the outcome. How did you feel about the constant changes?</p>
+    </article>
+
+    <article class="q">
+      <span class="label">Question 2 of 6</span>
+      <p>Tell us about a situation where you effectively handled a dissatisfied customer using compassion and empathy. Please describe the situation, your actions, and the outcome.</p>
+    </article>
+
+    <!-- Paywall -->
+    <section class="paywall" aria-label="Unlock the remaining questions">
+      <h2>Pay $1.21 to Unlock the Rest</h2>
+      <p>Unlock Questions 3–6 and the Language Assessment section. A one-time payment of&nbsp;$1.21.</p>
+      <a class="btn btn-pay" href="https://buy.stripe.com/4gMfZacO50fYbNA1Hs93y04" target="_blank" rel="noopener">Pay $1.21 with Stripe</a>
+      <div class="paid-row">
+        <span class="divider-or">Already paid?</span><br>
+        <button type="button" class="btn btn-paid" id="unlockBtn">I already paid — Unlock questions</button>
+      </div>
+    </section>
+
+    <!-- Locked / paid content -->
+    <div id="locked" aria-hidden="true">
+      <div class="unlocked-banner">Questions unlocked — best of luck with your interview.</div>
+
+      <div class="band"><span class="tag">Paid questions</span><span class="rule"></span></div>
+
+      <article class="q">
+        <span class="label">Question 3 of 6</span>
+        <p>Please give an example of a time you witnessed someone you work with acting against established rules, policies, procedures, or safety protocols. What actions did you take, and what were the results?</p>
+      </article>
+
+      <article class="q">
+        <span class="label">Question 4 of 6</span>
+        <p>Great service is about ensuring customer satisfaction. Describe a time you turned an unsatisfied customer into a satisfied customer. Please describe the situation, your actions, and the outcome.</p>
+      </article>
+
+      <article class="q">
+        <span class="label">Question 5 of 6</span>
+        <p>Tell us about a time you struggled with, or were overwhelmed by, a new or difficult challenge at work. Please describe the situation, your actions, and the outcome.</p>
+      </article>
+
+      <article class="q">
+        <span class="label">Question 6 of 6</span>
+        <p>Doing the right thing is not always easy. Tell us about a time when you chose what you thought was the most ethical course of action even though there were other easier options. Please describe the situation, your actions, and the outcome.</p>
+      </article>
+
+      <!-- Language Assessment -->
+      <div class="band"><span class="tag">Final section</span><span class="rule"></span></div>
+      <h2 class="lang-head">Language Assessment</h2>
+      <p class="lang-sub">Answer each of the following in your native language.</p>
+
+      <article class="q q-lang">
+        <p>Please tell us about yourself and your experience.</p>
+        <span class="note">(Must be answered in your native language, not less than two minutes.)</span>
+      </article>
+
+      <article class="q q-lang">
+        <p>Please promote Dubai in the summer (off season).</p>
+        <span class="note">(Must be answered in your native language, not less than two minutes.)</span>
+      </article>
+
+      <article class="q q-lang">
+        <p>Why did you choose the customer service role, and why did you choose Emirates Airline?</p>
+        <span class="note">(Must be answered in your native language, not less than two minutes.)</span>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    Emirates Airline Customer Service Online Interview Questions · Questions are for viewing only; answers are submitted separately.
+  </footer>
+
+  <script>
+    (function () {
+      var btn = document.getElementById('unlockBtn');
+      var locked = document.getElementById('locked');
+      if (!btn || !locked) return;
+      btn.addEventListener('click', function () {
+        locked.classList.add('unlocked');
+        locked.setAttribute('aria-hidden', 'false');
+        locked.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    })();
+  </script>
+</body>
+</html>
