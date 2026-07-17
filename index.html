@@ -339,7 +339,7 @@
 
       <div class="divider-or">or</div>
 
-      <button class="btn-unlock" onclick="unlockContent()">
+      <button class="btn-unlock" id="btn-unlock">
         I already paid — Unlock questions
       </button>
     </div>
@@ -422,14 +422,13 @@
   </footer>
 
   <script>
-    function unlockContent() {
-      var locked = document.getElementById('locked-content');
+    document.getElementById('btn-unlock').addEventListener('click', function () {
+      const locked = document.getElementById('locked-content');
       if (locked) {
         locked.style.display = 'block';
-        // Scroll smoothly to the newly revealed content
         locked.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
-    }
+    });
   </script>
 
 </body>
