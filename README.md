@@ -11,8 +11,8 @@ after payment. There are no answer fields — candidates record answers elsewher
 
 ## How unlocking works
 
-- The **Pay $1.21 to Unlock the Rest** button opens the Stripe payment link.
-- The **I already paid — Unlock questions** button reveals the hidden questions
+- The **Support the group** button opens the Stripe payment link.
+- The **Show all questions** button reveals the hidden questions
   directly on the page via JavaScript (no redirect, no URL parameter, no backend).
 
 ## Deploy with GitHub Pages
